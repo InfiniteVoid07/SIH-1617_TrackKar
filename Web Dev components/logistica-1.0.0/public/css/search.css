@@ -1,0 +1,165 @@
+/* Container styles */
+.know-stop-container {
+    background-color: #F0F7E9; /* Light green background similar to the example */
+    border-radius: 10px;
+    padding: 20px;
+    width: 450px; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    position: relative;
+}
+
+/* Header styles */
+.know-stop-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-icon {
+    /* background-image: url('img/search.svg');
+    background-size: contain;
+    background-repeat: no-repeat; */
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 2px;
+}
+
+.bi{
+    margin-right: 0.4rem;
+}
+
+.know-stop-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3A4F3C; /* Dark green font color */
+    margin: 0;
+}
+
+/* Search container */
+.search-container {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    width: 100%; /* Take full width of the container */
+    padding: 10px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.search-input::placeholder {
+    color: #B0B0B0;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    margin-top: 10px; /* Add space between input and button */
+}
+
+.search-btn {
+    padding: 8px 15px; /* Smaller padding for less height */
+    background-color: #004D46; /* Dark green background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #003B36; /* Slightly darker on hover */
+}
+
+.bus-stops-list {
+    margin-top: 20px;
+}
+
+.bus-stop-item {
+    background-color: #E9F7EF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bus-stop-item h3 {
+    margin: 0;
+    color: #2F4F4F;
+}
+
+.bus-stop-item p {
+    margin: 0;
+    color: #555;
+}
+
+.bus-stop-info {
+    margin-top: 20px;
+}
+
+.bus-stop-info h3 {
+    color: #2F4F4F;
+    font-size: 1.3rem;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#suggestions {
+    width: 300px;
+    max-height: 200px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow-y:scroll;
+    z-index: 1000;
+    display: none;
+}
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+#suggestions li:hover {
+    background-color: #f1f1f1;
+}
+#suggestions li:last-child {
+    border-bottom: none;
+}
+
+/* Optional: Add some media queries for responsiveness */
+@media (max-width: 600px) {
+    .know-stop-container {
+        width: 90%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}

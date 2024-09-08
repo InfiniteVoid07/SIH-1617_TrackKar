@@ -1,0 +1,100 @@
+/* Container styles */
+.know-bus-container {
+    background-color: #F0F7E9; /* Light green background similar to the example */
+    border-radius: 10px;
+    padding: 20px;
+    width: 450px; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    position: relative;
+}
+
+/* Header styles */
+.know-bus-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-icon {
+    /* background-image: url('img/search.svg');
+    background-size: contain;
+    background-repeat: no-repeat; */
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 2px;
+}
+
+.bi{
+    margin-right: 0.4rem;
+}
+
+.know-bus-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3A4F3C; /* Dark green font color */
+    margin: 0;
+}
+
+/* Search container */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    width: 100%; /* Take full width of the container */
+    padding: 10px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.search-input::placeholder {
+    color: #B0B0B0;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    margin-top: 10px; /* Add space between input and button */
+}
+
+.search-btn {
+    padding: 8px 15px; /* Smaller padding for less height */
+    background-color: #004D46; /* Dark green background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #003B36; /* Slightly darker on hover */
+}
+
+/* Optional: Add some media queries for responsiveness */
+@media (max-width: 600px) {
+    .know-stop-container {
+        width: 90%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}

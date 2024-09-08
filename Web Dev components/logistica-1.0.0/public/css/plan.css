@@ -1,0 +1,128 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+.journey-form {
+    margin: 2rem;
+    background-color: #F0F7E9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 0 auto;  /* This centers the form horizontally */
+    margin-top: 50px; /* Add spacing below the navbar */
+    margin-bottom: 50px; /* Add spacing above the footer */
+    text-align: left;  /* Ensures text remains left-aligned */
+}
+
+.journey-header{
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    gap: 10px;
+}
+
+.dtc {
+    width: 2.5rem; /* Adjust size as needed */
+    height: auto; /* Keep the aspect ratio */
+}
+
+.journey-header h2 {
+    margin: 0; /* Remove default margin from the heading */
+    font-size: 1.5rem; /* Adjust font size as per your design */
+}
+
+h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+form {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.leaving {
+    margin-top: 20px;
+}
+
+#leaving-now {
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.advanced-filters h3 {
+    margin-top: 20px;
+}
+
+.filter-btn {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filter-btn i {
+    margin-right: 8px;
+}
+
+.filter-btn.selected {
+    background-color: #658dc1;
+    color: white;
+    border-color: #658dc1;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#reset {
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
